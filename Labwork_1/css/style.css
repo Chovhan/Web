@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#head {
+  font-size: 50px;
+  font-family: Snell Roundhand;
+  font-style: italic;
+}
+
+.main_text {
+  height: 100%;
+  width: 48%;
+  float: left;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.second_text {
+  height: 100%;
+  width: 48%;
+  float: right;
+  padding: 5px;
+  font-size: 16px;
+}

@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#heading {
+  text-align: center;
+  font-size: 50px;
+  font-family: Snell Roundhand;
+  font-style: italic;
+  border-bottom: 1.5px solid gray;
+  padding: 10px;
+}
+
+.main {
+  width: 100%
+}
+
+.main_text {
+  height: 100%;
+  width: 48.5%;
+  float: left;
+  padding: 10px;
+  font-size: 16px;
+
+}
+
+.second_text {
+  height: 100%;
+  width: 48.5%;
+  float: right;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.clear{
+  clear: both;
+}
+
+#firstimage {
+  display: block;
+  margin: 15px auto 15px auto;
+  width: 50%;
+  height: auto;
+}
+
+.image-wrap {
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+}
+
+#footer {
+  position: fixed;
+  left: 0; bottom: 0;
+  padding: 10px;
+  background: grey;
+  color: white;
+  width: 100%;
+  text-align: center;
+}

@@ -37,9 +37,16 @@
   clear: both;
 }
 
-#firstimage {
+/* #firstimage {
   display: block;
   margin: 15px auto 15px auto;
+  width: 50%;
+  height: auto;
+} */
+
+img {
+  display: block;
+  margin: 15px;
   width: 50%;
   height: auto;
 }

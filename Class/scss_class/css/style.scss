@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cl {
+  height: 100px;
+  width: 100px;
+}
+
+.container-cube1 {
+  background: rgb(230, 255, 0);
+}
+
+.container-cube2 {
+  background: rgb(255, 52, 0);
+}
+
+.container-cube3 {
+  background: rgb(1, 0, 255);
+}
+
+@media (max-width: 720px){
+  .container {
+    flex-direction: column;
+  }
+  .container-cube1 {
+    background: black;
+  }
+}
+
+9
+@media (max-height: 1024px) and (orientation: landscape){
+  .container {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}

@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.wrap {
+  margin: 20px;
+  position: absolute;
+  height: 100px;
+  width: 300px;
+  border: 5px solid black;
+  transform: rotate(45deg);
+  top: 200px;
+}
+
+.wrap1 {
+  margin: 20px;
+  position: absolute;
+  height: 100px;
+  width: 300px;
+  border: 5px solid black;
+  transform: skew(40deg);
+  top: 200px;
+  left: 500px;
+}

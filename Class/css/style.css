@@ -1,0 +1,53 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.house, .house_wall {
+  position: relative;
+}
+
+.house_wall {
+  height: 500px;
+  width: 500px;
+  border: 2px solid black;
+}
+
+.house_roof {
+  width: 0;
+  height: 0;
+  border-left: 252px solid transparent;
+  border-right: 252px solid transparent;
+  border-bottom: 301px solid black;
+  transform: rotate(90deg);
+  
+}
+
+.wall_window_green, .wall_window_red {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  top: 100px;
+  position: absolute;
+}
+
+.wall_window_green {
+  background: green;
+  right: 50px;
+  position:
+}
+
+.wall_window_red {
+  background: red;
+  left: 50px;
+}
+
+.window_frame_hor, .window_frame_vert {
+  width: 100%;
+  border: 1px solid black;
+  position: absolute;
+}
+
+.window_frame_vert {
+  transform: rotate(90deg);
+}

@@ -8,11 +8,12 @@ function main() {
 }
 
 function functionDeclaration(varHello, varSpace, varWorld) {
-    if (typeof varWorld == "undefined"){
-        return "var 'varWorld' is undefined";
-    } else {
-        return varHello + varSpace + arguments[2];
-    }
+    // if (typeof varWorld == "undefined"){
+    //     return "var 'varWorld' is undefined";
+    // } else {
+    //     return varHello + varSpace + arguments[2];
+    // }
+    return (arguments.length !== 3) ? "var 'varWorld' is undefined" : varHello + varSpace + arguments[2];
 }
 
 let functionExpression = (varHello, varSpace, varExpression= "Expression") => varHello + varSpace + varExpression;

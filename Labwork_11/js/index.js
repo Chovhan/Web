@@ -1,24 +1,29 @@
 // http://127.0.0.1/echo?message=Hello -> Hello
 
-var http = require('http');
-var url = require('url');
+function main() {
+    var http = require('http');
+    var url = require('url');
 
-var server = http.Server(function (req, resp) {
-    console.log(req.headers);
+    var server = http.Server(function (req, resp) {
 
-    var urlParsed = url.parse(req.url, true);
-    console.log(urlParsed);
+        var urlParsed = url.parse(req.url, true);
+        checkUrl(urlParsed, resp);
 
-    if(urlParsed.pathname === "/echo" && urlParsed.query.message){
-        endResponce(resp, urlParsed.query.message);
+    });
+    server.listen(80, '127.0.0.1');
+}
+
+function checkUrl(urlParsed, resp) {
+    if (urlParsed.pathname === "/echo" && urlParsed.query.message) {
+        endResponse(resp, urlParsed.query.message);
     } else {
         resp.statusCode = '404';
-        endResponce(resp, 'Page not found');
+        endResponse(resp, 'Page not found');
     }
-});
-server.listen(80, '127.0.0.1');
-
-function endResponce(resp, answer) {
-    resp.end('Your url: ' + answer);
-
 }
+
+function endResponse(resp, answer) {
+    resp.end('Your url: ' + answer);
+}
+
+main();

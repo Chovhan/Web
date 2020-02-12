@@ -10,10 +10,15 @@ var server = http.Server(function (req, resp) {
     console.log(urlParsed);
 
     if(urlParsed.pathname === "/echo" && urlParsed.query.message){
-        resp.end(urlParsed.query.message);
+        endResponce(resp, urlParsed.query.message);
     } else {
         resp.statusCode = '404';
-        resp.end('Page not found');
+        endResponce(resp, 'Page not found');
     }
 });
 server.listen(80, '127.0.0.1');
+
+function endResponce(resp, answer) {
+    resp.end('Your url: ' + answer);
+
+}

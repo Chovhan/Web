@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.connection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.users-connection, .users-messages {
+    width: 35vw;
+    height: 48vh;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.user-one, .user-two {
+    width: auto;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.enter-message {
+    width: auto;
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#yourId, #otherId, #yourMessage {
+    width: auto;
+    height: 10vh;
+}
+#myVideo {
+    display: flex;
+    justify-content: center;
+}

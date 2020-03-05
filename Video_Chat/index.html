@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Chat</title>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+</head>
+<body>
+<div class="connection">
+    <div class="users-connection">
+        <div class="user-one">
+            <label for="yourId">Your Id</label>
+            <textarea id="yourId"></textarea>
+        </div>
+        <div class="user-two">
+            <label for="otherId">Other Id</label>
+            <textarea id="otherId"></textarea>
+        </div>
+        <button id="connect">Connect</button><br />
+    </div>
+
+    <div class="users-messages">
+        <div class="enter-message">
+            <label for="yourMessage">Your message</label>
+            <textarea id="yourMessage"></textarea>
+            <button id="send">Send</button>
+        </div>
+        <pre id="messages"></pre>
+        <pre id="youMessages"></pre>
+    </div>
+</div>
+
+<video id="myVideo"></video>
+
+</body>
+<script src="bundle.js" charset="UTF-8"></script>
+</html>
